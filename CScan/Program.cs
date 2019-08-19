@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Sockets;
 using System.Threading;
+using System.Reflection;
 
 namespace CScan
 {
@@ -81,6 +82,10 @@ namespace CScan
         static void Help()
         {
             Console.WriteLine("Help Menu");
+            Console.WriteLine("Simple C# Port Scanner, can take a single IP or CIDR /24 - /30");
+            string exepath = Assembly.GetEntryAssembly().Location;
+            Console.WriteLine(exepath + " 192.168.1.2 22,445,3389");
+            Console.WriteLine(exepath + " 192.168.1.0/24 21,22,25,80,443");
         }
 
         public static void scan(string ip, string port)
