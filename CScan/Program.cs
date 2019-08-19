@@ -81,11 +81,12 @@ namespace CScan
         }
         static void Help()
         {
-            Console.WriteLine("Help Menu");
-            Console.WriteLine("Simple C# Port Scanner, can take a single IP or CIDR /24 - /30");
-            string exepath = Assembly.GetEntryAssembly().Location;
-            Console.WriteLine(exepath + " 192.168.1.2 22,445,3389");
+            
+            Console.WriteLine("\nSimple C# Port Scanner, can take a single IP or CIDR /24 - /30" + "\n");
+            string exepath = System.AppDomain.CurrentDomain.FriendlyName;
+            Console.WriteLine(exepath + " 192.168.1.2 22,445,3389\n");
             Console.WriteLine(exepath + " 192.168.1.0/24 21,22,25,80,443");
+            System.Environment.Exit(0);
         }
 
         public static void scan(string ip, string port)
@@ -109,6 +110,7 @@ namespace CScan
             if (args.Length < 2 || args[0] == "-h" || args[0] == "--help" )
             {
                 Program.Help();
+
             }
 
             if (args[0].Contains("/"))

@@ -4,4 +4,3 @@ C:\Users\erik\Downloads\CScan\CScan\bin\Debug\CScan.pdb
 C:\Users\erik\Downloads\CScan\CScan\obj\Debug\CScan.csproj.CoreCompileInputs.cache
 C:\Users\erik\Downloads\CScan\CScan\obj\Debug\CScan.exe
 C:\Users\erik\Downloads\CScan\CScan\obj\Debug\CScan.pdb
-C:\Users\erik\Downloads\CScan\CScan\obj\Debug\CScan.csprojAssemblyReference.cache
